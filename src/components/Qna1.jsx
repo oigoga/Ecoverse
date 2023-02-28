@@ -1,6 +1,7 @@
 import React from 'react'
 import { Emailver, Radiobtn1 } from '../assets/assets'
 import Button from './Button'
+import { NavLink } from 'react-router-dom'
 const EmailVer = () => {
   return (
     <>
@@ -12,7 +13,7 @@ const EmailVer = () => {
             Your response to the next few questions will enable us serve you better.
           </p>
           <div className="w-full py-5 text-center">
-        <Button text="Next"/>
+          <NavLink to="/qna2"> <Button text='Next' /> </NavLink>
         </div>
             </div>
         </div>

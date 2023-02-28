@@ -2,7 +2,8 @@ import React from 'react'
 import Qnanav from './Qnanav';
 import { Radiobtn2 } from '../assets/assets';
 import { useState } from 'react';
-
+import { NavLink } from 'react-router-dom';
+import Button from './Button';
 const Qna2 = () => {
     const Image =  Radiobtn2;
     const [isChecked, setIsChecked] = useState(false);
@@ -32,6 +33,9 @@ const Qna2 = () => {
           </label>
         </div>
         </form>
+        <div className="w-full py-5 text-center">
+          <NavLink to="/qna3"> <Button text='Next' /> </NavLink>
+        </div>
     </>
   )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import {Brandname, Googlebtn } from '../assets/assets';
 import { useState } from "react";
 import Button from './Button';
-
+import { NavLink } from 'react-router-dom';
 
 const Signup = () => {
   const [name, setName] = useState("");
@@ -57,7 +57,7 @@ const Signup = () => {
           </label>
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="name"
+            id="nameu"
             type="text"
             placeholder="Enter your name"
             value={name}
@@ -70,7 +70,7 @@ const Signup = () => {
           </label>
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="email"
+            id="emailu"
             type="text"
             placeholder="Enter your email"
             value={email}
@@ -86,7 +86,7 @@ const Signup = () => {
           </label>
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="location"
+            id="locationu"
             type="text"
             placeholder="Enter your location"
             value={location}
@@ -102,7 +102,7 @@ const Signup = () => {
           </label>
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="password"
+            id="passwordu"
             type="password"
             placeholder="Enter your password"
             value={password}
@@ -123,12 +123,14 @@ const Signup = () => {
           </label>
         </div>
         <div className="mb-4 text-center">
-          <Button text='Continue'/>
+
+         <NavLink to="/verification"> <Button text='Continue' /> </NavLink>
           <p className='font-montserrat'>or</p>
           <button className='w-5/6  h-8'><img src={Googlebtn} alt="google" className='h-full w-full' /></button>
         </div>
         <div className="mb-4 text-center">
-         <p className='font-light text-black '>Have an account? <a href="" className='text-gold font-semibold'>Log in </a></p>
+         <p className='font-light text-black '>Have an account? 
+         <button className='text-gold font-semibold mx-3'> <NavLink to="/sign-in">  Login</NavLink></button></p>
         </div>
         </form>
         </div>

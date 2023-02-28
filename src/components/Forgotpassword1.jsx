@@ -3,6 +3,7 @@ import Signinbar from "./Signinbar";
 import { Locked } from "../assets/assets";
 import Button from "./Button";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Forgotpassword1 = () => {
   const [email, setEmail] = useState("");
@@ -45,7 +46,7 @@ const Forgotpassword1 = () => {
                 />
               </div>
               <div className="my-4 w-full text-center">
-                <Button text="Send" />
+              <NavLink to="/forgot-password2"> <Button text='Send' /> </NavLink>
               </div>
             </form>
           </div>

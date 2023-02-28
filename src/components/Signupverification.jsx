@@ -1,6 +1,7 @@
 import React from "react";
 import { SuVerification } from "../assets/assets";
 import Button from "./Button";
+import { NavLink } from "react-router-dom";
 
 const signupverification = () => {
   return (
@@ -17,8 +18,8 @@ const signupverification = () => {
             it’s really you.
           </p>
         </div>
-        <div className="w-full text-center">
-        <Button text="Sure!"/>
+        <div className="w-2/3 text-center">
+        <NavLink to="/qna1"> <Button text='Sure!' /> </NavLink>
         </div>
         <div className="my-4 text-center">
          <p className='font-light text-black '>Didn't get an email? <a href="" className='text-gold font-semibold'>Send it again </a></p>

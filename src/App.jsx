@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Splashscreen from './components/Splashscreen'
 import AppContent from './components/AppContent';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   
@@ -11,8 +12,9 @@ function App() {
   }, []);
   return (
    <>
+ <BrowserRouter>
       {loading ? <Splashscreen /> : <AppContent />}
-
+</BrowserRouter>
    </>
    
   )

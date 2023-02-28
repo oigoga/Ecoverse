@@ -2,6 +2,7 @@ import React from "react";
 import Signinbar from "./Signinbar";
 import { Unlocked } from "../assets/assets";
 import Button from "./Button";
+import { NavLink } from "react-router-dom";
 
 const Forgotpassword2 = () => {
   const handleSubmit = (event) => {
@@ -34,7 +35,7 @@ const Forgotpassword2 = () => {
                 <input type="number" className="border-gray0 border-2 rounded-md w-10 h-10" />
               </div>
               <div className="mb-10 w-full text-center">
-                <Button text="Verify" />
+              <NavLink to="/main-home"> <Button text='Verify' /> </NavLink>
               </div>
             </form>
           </div>

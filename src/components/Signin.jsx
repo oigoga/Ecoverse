@@ -3,6 +3,7 @@ import Signinbar from './Signinbar'
 import { useState } from 'react';
 import Button from './Button';
 import {Brandname, Googlebtn } from '../assets/assets';
+import { NavLink } from 'react-router-dom';
 const Signin = () => {
    
     const [email, setEmail] = useState("");
@@ -68,7 +69,7 @@ const Signin = () => {
           />
         </div>
        <div className='mb-4'>
-       <a href="" className='text-gold font-semibold'>Forgot Password </a>
+       <button href="" className='text-gold font-semibold'><NavLink to="/forgot-password1"> Forgot Password</NavLink></button>
        </div>
         <div className="mb-4 text-center">
           <Button text='Continue'/>
@@ -76,7 +77,7 @@ const Signin = () => {
           <button className='w-5/6  h-8'><img src={Googlebtn} alt="google" className='h-full w-full' /></button>
         </div>
         <div className="mb-4 text-center">
-         <p className='font-light text-black '>Don't have an account? <a href="" className='text-gold font-semibold'>Sign Up </a></p>
+         <p className='font-light text-black '>Don't have an account? <button href="" className='text-gold font-semibold mx-3'> <NavLink to="/sign-up"> Sign Up</NavLink></button></p>
         </div>
         </form>
        </div>
