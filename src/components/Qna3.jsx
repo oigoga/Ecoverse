@@ -9,7 +9,7 @@ const Qna3 = () => {
     <>
          <div><Qnanav image={Image} /></div>
          <div className="w-full py-5 text-center">
-          <NavLink to="/home"> <Button text='Next' /> </NavLink>
+          <NavLink to="/main-home"> <Button text='Next' /> </NavLink>
         </div>
     </>
   )

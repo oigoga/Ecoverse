@@ -12,7 +12,14 @@ import QnA3 from "./Qna3"
 import Signin from "./Signin";
 import Forgotpassword1 from "./Forgotpassword1";
 import Forgotpassword2 from "./Forgotpassword2";
+import Mainhome from "./Mainhome";
+import Home from "./Home";
 import Location from "./Location";
+import Store from "./Store";
+import Notifications from "./Notifications";
+import Profile from "./Profile";
+import Newpost from "./Newpost";
+import Salepost from "./Salepost";
 const AppContent = () => {
   return (
     <>
@@ -31,10 +38,18 @@ const AppContent = () => {
               <Route path='/qna3' element={<QnA3/>}/>
               <Route path='/forgot-password1' element={<Forgotpassword1/>}/>
               <Route path='/forgot-password2' element={<Forgotpassword2/>}/>
+              <Route path='/main-home' element={<Mainhome/>}/>
+              <Route path='/home' element={<Home/>}/>
+              <Route path='/location' element={<Location/>}/>
+              <Route path='/store' element={<Store/>}/>
+              <Route path='/notification' element={<Notifications/>}/>
+              <Route path='/profile' element={<Profile/>}/>
+              <Route path='/newpost' element={<Newpost/>}/>
+              <Route path='/sale-post' element={<Salepost/>}/>
               
        </Routes>
       
-      
+      {/* <Newpost/> */}
       
      
       

@@ -6,7 +6,7 @@ import { NavLink} from "react-router-dom";
 const onboardingscreen = () => {
   const Image =  Welcome ;
   const Heading = "Welcome to ECOVERSE";
-  const Description = "The social media for recycling enthusiasts";
+  const Description = "The social media dedicated to our planet.";
 
   return (
     <>
