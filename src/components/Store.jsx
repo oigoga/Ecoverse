@@ -3,7 +3,7 @@ import Homenavbar from './Homenavbar'
 const Store = () => {
   return (
     <>
-        <div>Store</div>
+       <h5 className='font-poppins font-bold text-3xl text-center'>Store</h5>
 <Homenavbar/>
     </>
     

@@ -10,7 +10,7 @@ const Signin = () => {
     
     const [password, setPassword] = useState("");
     
-  
+    const [user, setUser] = useState(null);
    
   
     const handleEmailChange = (event) => {
@@ -24,9 +24,23 @@ const Signin = () => {
   
    
   
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
       event.preventDefault();
-      // Submit the form data to the server or do something else with it
+      fetch(`http://localhost:3001/users?email=${email}&password=${password}`)
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.length > 0) {
+          // User is logged in
+          console.log('User logged in:', data[0]);
+        } else {
+          // Login failed
+          console.log('Invalid email or password');
+        }
+      })
+      .catch((error) => console.log(error));
+    // Reset the form inputs
+    setEmail('');
+    setPassword('');
     };
   
     const handleRegisterWithGoogle = () => {

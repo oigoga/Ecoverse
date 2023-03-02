@@ -43,7 +43,9 @@ import Security from "./security.png";
 import Darkmode from "./darkmode.png";
 import Report from "./report.png";
 import Help from "./help.png";
-
+import Logout from './logout.png'
+import Museum from './museum.png'
+import Dot from "./dot.png"
 export {
   Logo,
   Brandname,
@@ -90,4 +92,8 @@ export {
   Darkmode,
   Report, 
   Help,
+  Logout,
+  Museum,
+  Dot,
 };
+

@@ -30,10 +30,33 @@ const Signup = () => {
     setIsChecked(event.target.checked);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    // Submit the form data to the server or do something else with it
+    console.log(email);
+    const user = { name, email, password, location };
+    try {
+      const response = await fetch('http://localhost:3000/users', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(user),
+      });
+      const data = await response.json();
+      if (data.success) {
+        // Signup was successful, redirect to dashboard
+        window.location.href = '/main-home';
+      } else {
+        // Signup failed, show an error message
+        setError(data.message);
+      }
+    } catch (error) {
+      console.error(error);
+      setError('An error occurred during signup');
+    }
   };
+    // Submit the form data to the server or do something else with it
+  
 
   const handleRegisterWithGoogle = () => {
     // Handle registering with Google
@@ -53,7 +76,7 @@ const Signup = () => {
       <form onSubmit={handleSubmit} className='font-montserrat font-semibold'>
         <div className="mb-4">
           <label className="block -mb-1.5 text-black   " htmlFor="name">
-            Name
+            Full Name
           </label>
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -66,7 +89,7 @@ const Signup = () => {
         </div>
         <div className="mb-4">
           <label className="block -mb-1.5 text-black   " htmlFor="name">
-            Name
+          Email
           </label>
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"

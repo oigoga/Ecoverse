@@ -5,7 +5,7 @@ const home = () => {
   return (
     <>
         <Postskeleton/>
-        <Homenavbar/>
+        
     </>
   )
 }

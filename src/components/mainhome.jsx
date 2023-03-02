@@ -2,7 +2,8 @@ import React from "react";
 import { Storybar, Postcreation } from "../assets/assets";
 import Homenavbar from "./Homenavbar";
 import Createpost from "./Createpost";
-
+import Postskeleton from "./Postskeleton";
+import Home from "./Home";
 const Mainhome = () => {
   return (
     <>
@@ -12,6 +13,9 @@ const Mainhome = () => {
         </div>
         <div className="w-full">
           <Createpost />
+        </div>
+        <div>
+          <Home/>
         </div>
         <Homenavbar />
       </div>
