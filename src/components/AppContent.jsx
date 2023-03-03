@@ -43,7 +43,7 @@ const AppContent = () => {
               <Route path='/forgot-password1' element={<Forgotpassword1/>}/>
               <Route path='/forgot-password2' element={<Forgotpassword2/>}/>
               <Route path='/main-home' element={<Mainhome/>}/>
-              <Route path='/home' element={<Home/>}/>
+             
               <Route path='/location' element={<Location/>}/>
               <Route path='/store' element={<Marketplace />}/>
               <Route path='/notification' element={<Notifications/>}/>
