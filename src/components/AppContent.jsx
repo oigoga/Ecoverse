@@ -1,4 +1,4 @@
-import React from "react";
+import React  from "react";
 import { Route, Routes} from "react-router-dom";
 import Onboarding1 from "./onboardingscreen1"
 import Onboarding2 from "./onboardingscreen2";
@@ -15,12 +15,16 @@ import Forgotpassword2 from "./Forgotpassword2";
 import Mainhome from "./Mainhome";
 import Home from "./Home";
 import Location from "./Location";
-import Store from "./Store";
+import Marketplace from "./Marketplace";
 import Notifications from "./Notifications";
 import Profile from "./Profile";
 import Newpost from "./Newpost";
 import Salepost from "./Salepost";
+import MarketplaceData from './Marketplacedata'
+import { useState } from "react";
+
 const AppContent = () => {
+  const [posts, setPosts] = useState(MarketplaceData)
   return (
     <>
   
@@ -41,7 +45,7 @@ const AppContent = () => {
               <Route path='/main-home' element={<Mainhome/>}/>
               <Route path='/home' element={<Home/>}/>
               <Route path='/location' element={<Location/>}/>
-              <Route path='/store' element={<Store/>}/>
+              <Route path='/store' element={<Marketplace />}/>
               <Route path='/notification' element={<Notifications/>}/>
               <Route path='/profile' element={<Profile/>}/>
               <Route path='/newpost' element={<Newpost/>}/>

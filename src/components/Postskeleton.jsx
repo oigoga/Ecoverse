@@ -1,48 +1,45 @@
 import React from "react";
-import { Img, Thumbsup, Like, comment, Share, Museum, Dot } from "../assets/assets";
-const Postskeleton = ({
-  profileimg,
-  
-  image,
-  username,
-  heading,
-//   desc,
-  likes,
-  comments,
-  shares,
-}) => {
-    const desc = "Lorem nndsdsivnvnifinva rjgronfnpfmv nponNRNFIVNF NPOAFNNEOFf ipsnh tnhptnht "
+import {
+  Img,
+  Thumbsup,
+  Like,
+  comment,
+  Share,
+  Museum,
+  Dot,
+} from "../assets/assets";
+const Postskeleton = ({post}) => {
   return (
     <>
       <div className="flex flex-col">
-        <div className="flex my-1">
+        <div className="flex my-1 md:justify-center">
           <div className=" rounded-full">
-            <img src={Img} alt="" />
+            <img src={post.user} alt="" />
           </div>
-          <h4 className="font-poppins font-bold m-3 text-lg">{username}</h4>
+          <h4 className="font-poppins font-bold m-3 text-lg">{post.username}</h4>
         </div>
         <div>
-          <p className="font-montserrat text-left">{desc}</p>
+          <p className="font-montserrat text-left md:text-center">{post.desc}</p>
         </div>
-        <div className="my-2" >
-          <img src={Museum} alt="" />
+        <div className="my-2 flex justify-center">
+          <img src={post.image} alt="" />
         </div>
         <div className="flex justify-between font-montserrat text-green text-sm">
-          <div className="p-2">
-            <img src={Thumbsup} alt="" className="h-3 w-3 " />
-            <p>{likes}</p>
+          <div className=" flex">
+            <img src={Thumbsup} alt="" className="h-3 w-3 mr-2 mt-1 " />
+            <p>{post.likes}</p>
           </div>
           <div className="flex">
             <p className="mx-2">
-              <span>{comments}</span> comments
+              <span>{post.comments}</span> comments
             </p>
             <img src={Dot} alt="" className="h-1 w-1 mt-3" />
             <p className="mx-2">
-              <span>{shares}</span> shares
+              <span>{post.shares}</span> shares
             </p>
           </div>
         </div>
-        <hr className="text-gray1"/>
+        <hr className="text-gray1" />
         <div className="flex justify-between my-2">
           <div className="flex ">
             <button className="mx-1">

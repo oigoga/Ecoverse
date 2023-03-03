@@ -46,6 +46,15 @@ import Help from "./help.png";
 import Logout from './logout.png'
 import Museum from './museum.png'
 import Dot from "./dot.png"
+import Cans from './cans.png'
+import Bottlecaps from './bottlecaps.png'
+import Glassbottles from './glassbottles.png'
+import Dogtoy from './dogtoy.png'
+import Snailtoy from './snailtoy.png'
+import Jane from './jane.png'
+import Mac from './mac.png'
+import Obi from './mikeobi.png'
+import Tayo from './tayo.png'
 export {
   Logo,
   Brandname,
@@ -95,5 +104,14 @@ export {
   Logout,
   Museum,
   Dot,
+  Cans,
+  Bottlecaps,
+  Glassbottles,
+  Dogtoy,
+  Snailtoy,
+  Jane,
+  Mac,
+  Obi,
+  Tayo
 };
 

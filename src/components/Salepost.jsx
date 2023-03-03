@@ -1,7 +1,7 @@
 import React from "react";
 import { Arrow, Img, Addmedia } from "../assets/assets";
 import { NavLink } from "react-router-dom";
-const Salepost = () => {
+const Salepost = ({text}) => {
   const username = "Jane Lupata";
   const Image = Img;
   return (
@@ -27,15 +27,17 @@ const Salepost = () => {
           </div>
         </div>
         <div className="px-5 my-4">
-          <input
+          <textarea
             type="text"
+            value={text}
             name=""
             id="desc"
-            className="h-24 w-full   bg-grey"
+            rows={5}
+            className=" w-full   bg-grey"
           />
         </div>
         <div className="flex justify-end mx-5">
-          <button><img src={Addmedia} alt="" /></button>
+          <button ><img src={Addmedia} alt="" /></button>
         </div>
       </div>
     </>

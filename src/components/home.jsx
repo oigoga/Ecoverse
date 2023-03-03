@@ -1,11 +1,24 @@
 import React from 'react'
+import { useState } from 'react'
 import Postskeleton from './Postskeleton'
+import Marketplaceskeleton from './Marketplaceskeleton'
 import Homenavbar from './Homenavbar'
-const home = () => {
+import Postdata from './Postdata'
+const home = ({posts}) => {
+  
+  
   return (
     <>
-        <Postskeleton/>
-        
+      {posts.map(post => (
+      
+      <div>
+       <Postskeleton key={post.id} post={post}/>
+
+      </div>
+      
+    
+    ))}
+
     </>
   )
 }
