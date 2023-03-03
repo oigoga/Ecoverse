@@ -13,7 +13,6 @@ import Signin from "./Signin";
 import Forgotpassword1 from "./Forgotpassword1";
 import Forgotpassword2 from "./Forgotpassword2";
 import Mainhome from "./Mainhome";
-import Home from "./Home";
 import Location from "./Location";
 import Marketplace from "./Marketplace";
 import Notifications from "./Notifications";
@@ -24,7 +23,7 @@ import MarketplaceData from './Marketplacedata'
 import { useState } from "react";
 
 const AppContent = () => {
-  const [posts, setPosts] = useState(MarketplaceData)
+ 
   return (
     <>
   
@@ -43,7 +42,6 @@ const AppContent = () => {
               <Route path='/forgot-password1' element={<Forgotpassword1/>}/>
               <Route path='/forgot-password2' element={<Forgotpassword2/>}/>
               <Route path='/main-home' element={<Mainhome/>}/>
-             
               <Route path='/location' element={<Location/>}/>
               <Route path='/store' element={<Marketplace />}/>
               <Route path='/notification' element={<Notifications/>}/>
