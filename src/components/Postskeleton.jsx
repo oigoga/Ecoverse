@@ -11,8 +11,8 @@ import {
 const Postskeleton = ({post}) => {
   return (
     <>
-      <div className="flex flex-col">
-        <div className="flex my-1 md:justify-center">
+      <div className="flex flex-col mb-5">
+        <div className="flex mt-1  md:justify-center">
           <div className=" rounded-full">
             <img src={post.user} alt="" />
           </div>

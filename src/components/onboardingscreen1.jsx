@@ -13,7 +13,7 @@ const onboardingscreen = () => {
       <Osskeleton image={Image} desc={Description} heading={Heading} />
       <div className="text-center">
         <button className="bg-white font-montserrat text-green border-2 border-green rounded-md w-28 mx-3 text-base">
-        <NavLink to="/sign-up">Skip</NavLink>
+        <NavLink to="/main-home">Skip</NavLink>
         </button>
         <button className="bg-green font-montserrat text-white rounded-md w-28 mx-3 py-0.5 text-base">
         <NavLink to="/message2">Next</NavLink>

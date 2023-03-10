@@ -12,7 +12,7 @@ const EmailVer = () => {
             <p className="font-montserrat text-base text-center mx-4">
             Your response to the next few questions will enable us serve you better.
           </p>
-          <div className="w-full py-5 text-center">
+          <div className="w-1/4 mx-[35%] py-5 text-center">
           <NavLink to="/qna2"> <Button text='Next' /> </NavLink>
         </div>
             </div>
