@@ -7,7 +7,7 @@ import Postskeleton from "./Postskeleton";
 import Postdata from "./Postdata";
 import { useState } from "react";
 import Home from "./Home";
-const Mainhome = () => {
+const Feed = () => {
   const [posts, setPosts] = useState(Postdata)
   return (
     <>
@@ -28,4 +28,4 @@ const Mainhome = () => {
   );
 };
 
-export default Mainhome;
+export default Feed;

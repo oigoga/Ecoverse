@@ -12,7 +12,7 @@ import QnA3 from "./Qna3"
 import Signin from "./Signin";
 import Forgotpassword1 from "./Forgotpassword1";
 import Forgotpassword2 from "./Forgotpassword2";
-import Mainhome from "./Mainhome";
+import Feed from "./Feed";
 import Location from "./Location";
 import Marketplace from "./Marketplace";
 import Notifications from "./Notifications";
@@ -41,7 +41,7 @@ const AppContent = () => {
               <Route path='/qna3' element={<QnA3/>}/>
               <Route path='/forgot-password1' element={<Forgotpassword1/>}/>
               <Route path='/forgot-password2' element={<Forgotpassword2/>}/>
-              <Route path='/main-home' element={<Mainhome/>}/>
+              <Route path='/main-home' element={<Feed/>}/>
               <Route path='/location' element={<Location/>}/>
               <Route path='/store' element={<Marketplace />}/>
               <Route path='/notification' element={<Notifications/>}/>
