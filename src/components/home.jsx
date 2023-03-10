@@ -1,10 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
 import Postskeleton from './Postskeleton'
-import Marketplaceskeleton from './Marketplaceskeleton'
-import Homenavbar from './Homenavbar'
-import Postdata from './Postdata'
-const home = ({posts}) => {
+
+const Home = ({posts}) => {
   
   
   return (
@@ -23,4 +21,4 @@ const home = ({posts}) => {
   )
 }
 
-export default home
+export default Home
